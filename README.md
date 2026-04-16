@@ -7,8 +7,7 @@ It provides a clean user interface and supports basic arithmetic operations with
 
 ## Live Demo
 
-https://aamir-vakot.github.io/calculator/
-
+https://aamirvakot25.github.io/calculator-app/
 ---
 
 ## Features
