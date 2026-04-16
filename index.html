@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <button onclick="toggleHistory()">📜</button>
+        <button onclick="toggleTheme()">🌙</button>
+    </div>
+
+    <!-- History Dropdown -->
+    <div class="history-box" id="historyBox">
+
+    <div class="history-header">
+        <span>History</span>
+        <button onclick="clearHistory()">Clear</button>
+    </div>
+
+    <ul id="historyList"></ul>
+
+</div>
+
+    <!-- Display -->
+    <div class="display">
+        <div id="expression"></div>
+        <div id="result">0</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+
+        <!-- Row 1 -->
+        <button onclick="clearAll()">C</button>
+        <button onclick="deleteLast()">⌫</button>
+        <button onclick="append('%')">%</button>
+        <button class="op" onclick="append('/')">÷</button>
+
+        <!-- Row 2 -->
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button class="op" onclick="append('*')">×</button>
+
+        <!-- Row 3 -->
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button class="op" onclick="append('-')">−</button>
+
+        <!-- Row 4 -->
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button class="op" onclick="append('+')">+</button>
+
+        <!-- Row 5 (Scientific) -->
+        <button onclick="square()">x²</button>
+        <button onclick="sqrt()">√</button>
+        <button onclick="sin()">sin</button>
+        <button onclick="cos()">cos</button>
+
+        <!-- Row 6 -->
+        <button class="zero" onclick="append('0')">0</button>
+        <button onclick="append('.')">.</button>
+        <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+
+</div>
+
+<script src="calculator.js"></script>
+
+</body>
+</html>
